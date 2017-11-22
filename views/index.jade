@@ -4,10 +4,11 @@ block head_scripts
   script(src='/javascripts/index.js',type="text/javascript")
 
 block content
-  center
+  center(style="margin-top:100px")
     .login
-      h1.loginheading Login
+      h3.loginheading Insider File Upload Application
       form(action="/",method='POST',enctype="multipart/form-data")
-        .form-group.nameInput.has-feedback
+        .form-group.nameInput.has-feedback(style="margin-top:20px")
           input.path(type='file', name='imagePath')
-        input.submit(type='submit', value='Upload')
+        .form-group.nameInput.has-feedback(style="margin-top:20px")  	
+          input.submit(type='submit', value='Upload')
