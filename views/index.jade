@@ -1,0 +1,13 @@
+extends layout
+
+block head_scripts
+  script(src='/javascripts/index.js',type="text/javascript")
+
+block content
+  center
+    .login
+      h1.loginheading Login
+      form(action="/",method='POST',enctype="multipart/form-data")
+        .form-group.nameInput.has-feedback
+          input.path(type='file', name='imagePath')
+        input.submit(type='submit', value='Upload')
